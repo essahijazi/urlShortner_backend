@@ -1,0 +1,10 @@
+
+ <div class="parent">
+    <%= form_tag shorten_url_path, class: "url_form form-inline" do |f| %>
+        <div class="form-group mr-3">
+            <label for="url_input" class="mr-3" >URL: </label>
+            <%= text_field_tag 'url', '', class: 'form-control', id: "url_input" %>
+        </div>
+        <%= submit_tag "Shorten", class: "btn btn-primary" %>
+    <% end %>
+</div>
