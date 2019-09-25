@@ -35,11 +35,4 @@ class UrlsController < ApplicationController
 
     end
   end
-
-  private
-
-  def sho
-
-  end
-
 end
