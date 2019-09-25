@@ -1,14 +1,17 @@
 class UrlsController < ApplicationController
-  
+
   def show
   end
 
   def shorten
-    binding.pry
-    # url = params[:url]
+    url = params[:originalURL]
+    render json: {url: url}
+  end
 
+  private
 
-    # render json: {url: params[:url]}
+  def shorten_url_helper(url)
+    
   end
 
 end
